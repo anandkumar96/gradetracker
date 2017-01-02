@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.gradetracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <!-- DATABASE INFORMATION -->
+        <provider
+            android:name=".data.AssignmentProvider"
+            android:authorities="com.example.android.gradetracker"
+            android:exported="false" />
+
+        <!-- COURSE CATALOG ACTIVITY -->
+        <activity android:name=".CourseCatalogActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- COURSE EDITOR ACTIVITY -->
+        <activity
+            android:name=".CourseEditorActivity"
+            android:parentActivityName=".CourseCatalogActivity"
+            android:theme="@style/EditorTheme">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CourseCatalogActivity" />
+        </activity>
+
+
+        <!-- ASSIGNMENT CATALOG ACTIVITY -->
+        <activity
+            android:name=".AssignmentCatalogActivity"
+            android:parentActivityName=".CourseCatalogActivity"
+            android:theme="@style/AssignmentCatalogActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CourseCatalogActivity" />
+        </activity>
+
+        <!-- ASSIGNMENT EDITOR ACTIVITY -->
+        <activity
+            android:name=".AssignmentEditorActivity"
+            android:parentActivityName=".AssignmentCatalogActivity"
+            android:theme="@style/EditorTheme">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AssignmentCatalogActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

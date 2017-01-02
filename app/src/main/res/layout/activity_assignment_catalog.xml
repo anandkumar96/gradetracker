@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the assignment catalog -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssignmentCatalogActivity">
+
+
+    <!-- Course Summary -->
+    <LinearLayout
+        android:id="@+id/CourseSummary_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/CourseSummaryTitle_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/course_summary"  />
+
+        <!-- Relative Layout for 1st category -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <!-- Category Name -->
+            <TextView
+                android:id="@+id/Category1Name_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D"
+                tools:text="CategoryName_TextView"  />
+
+            <!-- Grade (Slash between score and max) -->
+            <TextView
+                android:id="@+id/Category1ScorePercent_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D"
+                android:text="%"/>
+
+            <!-- Grade (Scored Points) -->
+            <TextView
+                android:id="@+id/Category1Score_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/Category1ScorePercent_TextView"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D"
+                tools:text="100"/>
+        </RelativeLayout>
+
+        <!-- Relative Layout for 2nd category -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <!-- Category Name -->
+            <TextView
+                android:id="@+id/Category2Name_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D"
+                tools:text="CategoryName_TextView"  />
+
+            <!-- Grade (Slash between score and max) -->
+            <TextView
+                android:id="@+id/Category2ScorePercent_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D"
+                android:text="%"/>
+
+            <!-- Grade (Scored Points) -->
+            <TextView
+                android:id="@+id/Category2Score_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/Category2ScorePercent_TextView"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D"
+                tools:text="100"/>
+        </RelativeLayout>
+
+        <!-- Relative Layout for 3rd category -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <!-- Category Name -->
+            <TextView
+                android:id="@+id/Category3Name_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D"
+                tools:text="CategoryName_TextView"  />
+
+            <!-- Grade (Slash between score and max) -->
+            <TextView
+                android:id="@+id/Category3ScorePercent_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D"
+                android:text="%"/>
+
+            <!-- Grade (Scored Points) -->
+            <TextView
+                android:id="@+id/Category3Score_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/Category3ScorePercent_TextView"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D"
+                tools:text="100"/>
+        </RelativeLayout>
+
+        <!-- Relative Layout for 4th category -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <!-- Category Name -->
+            <TextView
+                android:id="@+id/Category4Name_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D"
+                tools:text="CategoryName_TextView"  />
+
+            <!-- Grade (Slash between score and max) -->
+            <TextView
+                android:id="@+id/Category4ScorePercent_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D"
+                android:text="%"/>
+
+            <!-- Grade (Scored Points) -->
+            <TextView
+                android:id="@+id/Category4Score_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/Category4ScorePercent_TextView"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D"
+                tools:text="100"/>
+        </RelativeLayout>
+
+        <!-- Relative Layout for total category -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <!-- Category Name -->
+            <TextView
+                android:id="@+id/CategoryTotalName_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark"
+                tools:text="CourseGrade_TextView"  />
+
+            <!-- Grade (Slash between score and max) -->
+            <TextView
+                android:id="@+id/TotalScorePercent_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="%"/>
+
+            <!-- Grade (Scored Points) -->
+            <TextView
+                android:id="@+id/CategoryTotalScore_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/TotalScorePercent_TextView"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark"
+                tools:text="100"/>
+        </RelativeLayout>
+
+        <!-- Separator before list -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+
+    <!-- List of assignments -->
+    <ListView
+        android:id="@+id/Assignments_ListView"
+        android:orientation="vertical"
+        android:layout_below="@id/CourseSummary_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="true"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_input_add"  />
+
+
+
+    <!-- Empty view for the list -->
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/empty_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/empty_view_title_text"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/empty_subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_title_text"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:paddingTop="8dp"
+            android:text="@string/empty_assignmentview_subtitle_text"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#A2AAB0"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

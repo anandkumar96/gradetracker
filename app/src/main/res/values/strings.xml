@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Grade Tracker</string>
+
+    <!-- Title/Subtitle text for the empty view, which prompts the user to add an item [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">It\'s a bit lonely here...</string>
+    <string name="empty_assignmentview_subtitle_text">Get started by adding an assignment</string>
+    <string name="empty_courseview_subtitle_text">Get started by adding a course</string>
+
+    <!-- Field Labels for Course Editor [CHAR LIMIT=50] -->
+    <string name="course_overview">Overview</string>
+    <string name="course_summary">Course Summary</string>
+    <string name="add_category_button">Add a new category</string>
+    <string name="course_category1">Category 1</string>
+    <string name="course_category2">Category 2</string>
+    <string name="course_category3">Category 3</string>
+    <string name="course_category4">Category 4</string>
+    <string name="course_category5">Category 5</string>
+    <string name="course_total">Course Total</string>
+
+
+    <!-- Field Hints for Course Editor [CHAR LIMIT=50] -->
+    <string name="course_name">Course Name</string>
+    <string name="course_term">Term (Ex: Fall 2016)</string>
+    <string name="course_category_name">Category Name</string>
+    <string name="course_category_weight">Category Weight</string>
+
+
+    <!-- Label for overview category of attributes in the assignment editor [CHAR LIMIT=30] -->
+    <string name="assignment_name">Name</string>
+    <string name="assignment_category">Category</string>
+    <string name="assignment_score">Earned Score</string>
+    <string name="assignment_maxscore">Total Possible</string>
+
+
+    <!-- Toast messages for insertion/update  -->
+    <string name="toast_assignmentInsertionError">ERROR: Assignment not saved</string>
+    <string name="toast_assignmentInsertionSuccess">Assignment successfully saved</string>
+    <string name="toast_courseInsertionError">ERROR: Course not saved</string>
+    <string name="toast_courseInsertionSuccess">Course successfully saved</string>
+    <string name="toast_assignmentUpdateSuccess">Assignment successfully updated</string>
+    <string name="toast_courseUpdateSuccess">Course successfully updated</string>
+
+
+    <!-- Overflow menu for menu_assignmentcatalog and coursecatalog [CHAR LIMIT=20]
+    <integer name="assignmentcatalog_courseeditor_request_code">0xabcde0000</integer> -->
+    <string name="action_insert_dummy_assignment">Insert Dummy Assgn</string>
+    <string name="action_edit_course">Edit Course Details</string>
+    <string name="action_delete_all_assignments">Clear Assignments</string>
+    <string name="action_insert_dummy_course">Insert Dummy Course</string>
+    <string name="action_delete_all_courses">Clear Courses</string>
+
+    <!-- Toast messages for deleting  [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_assignment_successful">Assignment(s) deleted</string>
+    <string name="editor_delete_assignment_failed">No assignments were deleted</string>
+    <string name="editor_delete_course_successful">Course(s) deleted</string>
+    <string name="editor_delete_course_failed">No courses were deleted</string>
+
+    <!-- Editor menu options to save/delete pet and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+
+    <!-- Titles for the editor activity  [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_assignment">Add an Assignment</string>
+    <string name="editor_activity_title_edit_assignment">Edit Assignment</string>
+    <string name="editor_activity_title_new_course">Add a Course</string>
+    <string name="editor_activity_title_edit_course">Edit Course</string>
+    <string name="categoryweight_separator">//weight::</string>
+
+
+    <!-- STRINGS FOR EDITOR'S UNSAVED CHANGES WARNINGS -->
+    <string name="unnamed_weight">Weights must be named</string>
+    <string name="invalid_total_weight">Weights must add up to 100%</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">discard</string>
+    <string name="keep_editing">keep editing</string>
+
+    <!-- STRINGS FOR DELETE CONFIRMATION DIALOG [CHAR LIMIT=NONE] -->
+    <string name="assignment_delete_dialog_msg">Delete this assignment?</string>
+    <string name="course_delete_dialog_msg">Delete this course and all of its assignments?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_course_catalog">CourseCatalogActivity</string>
+
+
+</resources>

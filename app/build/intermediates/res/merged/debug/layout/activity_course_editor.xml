@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Layout for the course editor -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".AssignmentEditorActivity">
+
+    <!-- Course Overview -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/course_overview"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/CourseName_EditText"
+                android:hint="@string/course_name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Assignment Category 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/course_category1"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Category Name field -->
+            <EditText
+                android:id="@+id/Category1Name_EditText"
+                android:hint="@string/course_category_name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Input fields -->
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <!-- Weight field -->
+                <EditText
+                    android:id="@+id/Category1Weight_EditText"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/course_category_weight"
+                    style="@style/EditorFieldStyle" />
+
+                <!-- Units for weight (percent) -->
+                <TextView
+                    android:id="@+id/AssignmentScoreUnits_TextView"
+                    android:text="%"
+                    style="@style/EditorUnitsStyle"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Assignment Category 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/course_category2"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Category Name field -->
+            <EditText
+                android:id="@+id/Category2Name_EditText"
+                android:hint="@string/course_category_name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Input fields -->
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <!-- Weight field -->
+                <EditText
+                    android:id="@+id/Category2Weight_EditText"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/course_category_weight"
+                    style="@style/EditorFieldStyle" />
+
+                <!-- Units for weight (percent) -->
+                <TextView
+                    android:text="%"
+                    style="@style/EditorUnitsStyle"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Assignment Category 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/course_category3"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Category Name field -->
+            <EditText
+                android:id="@+id/Category3Name_EditText"
+                android:hint="@string/course_category_name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Input fields -->
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <!-- Weight field -->
+                <EditText
+                    android:id="@+id/Category3Weight_EditText"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/course_category_weight"
+                    style="@style/EditorFieldStyle" />
+
+                <!-- Units for weight (percent) -->
+                <TextView
+                    android:text="%"
+                    style="@style/EditorUnitsStyle"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Assignment Category 4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/course_category4"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Category Name field -->
+            <EditText
+                android:id="@+id/Category4Name_EditText"
+                android:hint="@string/course_category_name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Input fields -->
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <!-- Weight field -->
+                <EditText
+                    android:id="@+id/Category4Weight_EditText"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/course_category_weight"
+                    style="@style/EditorFieldStyle" />
+
+                <!-- Units for weight (percent) -->
+                <TextView
+                    android:text="%"
+                    style="@style/EditorUnitsStyle"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -90,6 +91,9 @@ public class CourseCatalogActivity extends AppCompatActivity
                 String currentCourseTitle = (dbHelper.getDistinctCourses()).get(position);
                 ArrayList<String> categories = dbHelper.getCategoriesForCourse(currentCourseTitle);
 
+                Log.e("CourseCatalog", "listOnItemClick: course=" + currentCourseTitle
+                        + "\ncategory1 = " + categories.get(0));
+
                 ArrayList<String> currentCourseAndCategories = new ArrayList<String>(); // course details
                 currentCourseAndCategories.add(currentCourseTitle); // add title
                 currentCourseAndCategories.addAll(categories); // add categories
@@ -170,10 +174,6 @@ public class CourseCatalogActivity extends AppCompatActivity
     {
         switch (item.getItemId())
         {
-            case R.id.action_insert_dummy_course:
-                insertDummyCourse();
-                return true;
-
             case R.id.action_delete_all_courses:
                 deleteAllCourses();
                 return true;

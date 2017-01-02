@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Layout for the editor -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".AssignmentEditorActivity">
+
+    <!-- Assignment Name -->
+    <LinearLayout
+        android:id="@+id/AssignmentName_ContainerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/assignment_name"
+            style="@style/CategoryStyle" />
+
+        <!-- Input field -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/AssignmentName_EditText"
+                android:inputType="textCapWords"
+                tools:text="Assignment Name"
+                style="@style/EditorFieldStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Assignment Category -->
+    <LinearLayout
+        android:id="@+id/AssignmentCategory_ContainerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/assignment_category"
+            style="@style/CategoryStyle" />
+
+        <!-- Input field -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <!-- Category drop-down spinner -->
+            <Spinner
+                android:id="@+id/AssignmentCategory_Spinner"
+                android:layout_height="48dp"
+                android:layout_width="match_parent"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Earned Score -->
+    <LinearLayout
+        android:id="@+id/AssignmentScore_ContainerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/assignment_score"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+
+            <!-- Score field -->
+            <EditText
+                android:id="@+id/AssignmentScore_EditText"
+                android:inputType="numberDecimal"
+                tools:text="Earned Score"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Units for grade (pts) -->
+            <TextView
+                android:id="@+id/AssignmentScoreUnits_TextView"
+                android:text="pts"
+                style="@style/EditorUnitsStyle"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+    <!-- Max Score -->
+    <LinearLayout
+        android:id="@+id/AssignmentMaxScore_ContainerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/assignment_maxscore"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+
+            <!-- Score field -->
+            <EditText
+                android:id="@+id/AssignmentMaxScore_EditText"
+                android:inputType="numberDecimal"
+                tools:text="Max Score"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Units for grade (pts) -->
+            <TextView
+                android:id="@+id/AssignmentMaxScoreUnits_TextView"
+                android:text="pts"
+                style="@style/EditorUnitsStyle"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

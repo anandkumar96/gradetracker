@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- List item: one category -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="horizontal">
+
+    <!-- Label -->
+    <TextView
+        android:text="@string/course_category1"
+        style="@style/CategoryStyle" />
+
+    <!-- Input fields -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:paddingLeft="4dp"
+        android:orientation="vertical">
+
+        <!-- Category Name field -->
+        <EditText
+            android:id="@+id/CategoryName_EditText"
+            android:hint="@string/course_category_name"
+            android:inputType="textCapWords"
+            style="@style/EditorFieldStyle" />
+
+        <!-- Input fields -->
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <!-- Weight field -->
+            <EditText
+                android:id="@+id/CategoryWeight_EditText"
+                android:inputType="numberDecimal"
+                android:hint="@string/course_category_weight"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Units for weight (percent) -->
+            <TextView
+                android:id="@+id/CategoryWeightUnits_TextView"
+                android:text="%"
+                style="@style/EditorUnitsStyle"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

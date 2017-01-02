@@ -165,11 +165,8 @@ public class AssignmentCatalogActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(MenuItem item)
     {
         // User clicked on a menu option in the app bar overflow menu
-        switch (item.getItemId()) {
-            case R.id.action_insert_dummy_assignment:
-                insertDummyAssignment();
-                return true;
-
+        switch (item.getItemId())
+        {
             case R.id.action_delete_all_entries:
                 deleteAllAssignments();
                 return true;

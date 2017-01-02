@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\siran_000\\AndroidStudioProjects\\GradeTracker\\app\\build\\intermediates\\res\\merged\\debug\\menu\\floatingmenu_coursecatalog.xml",
+        "source": "C:\\Users\\siran_000\\AndroidStudioProjects\\GradeTracker\\app\\src\\main\\res\\menu\\floatingmenu_coursecatalog.xml"
+    },
+    {
+        "merged": "C:\\Users\\siran_000\\AndroidStudioProjects\\GradeTracker\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_assignmenteditor.xml",
+        "source": "C:\\Users\\siran_000\\AndroidStudioProjects\\GradeTracker\\app\\src\\main\\res\\menu\\menu_assignmenteditor.xml"
+    },
+    {
+        "merged": "C:\\Users\\siran_000\\AndroidStudioProjects\\GradeTracker\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_assignmentcatalog.xml",
+        "source": "C:\\Users\\siran_000\\AndroidStudioProjects\\GradeTracker\\app\\src\\main\\res\\menu\\menu_assignmentcatalog.xml"
+    },
+    {
+        "merged": "C:\\Users\\siran_000\\AndroidStudioProjects\\GradeTracker\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_coursecatalog.xml",
+        "source": "C:\\Users\\siran_000\\AndroidStudioProjects\\GradeTracker\\app\\src\\main\\res\\menu\\menu_coursecatalog.xml"
+    },
+    {
+        "merged": "C:\\Users\\siran_000\\AndroidStudioProjects\\GradeTracker\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_courseeditor.xml",
+        "source": "C:\\Users\\siran_000\\AndroidStudioProjects\\GradeTracker\\app\\src\\main\\res\\menu\\menu_courseeditor.xml"
+    }
+]

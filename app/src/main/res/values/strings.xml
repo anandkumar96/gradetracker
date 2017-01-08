@@ -70,6 +70,7 @@
 
     <!-- STRINGS FOR EDITOR'S UNSAVED CHANGES WARNINGS -->
     <string name="unnamed_weight">Weights must be named</string>
+    <string name="empty_course">Course cannot be empty</string>
     <string name="invalid_total_weight">Weights must add up to 100%</string>
     <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
     <string name="discard">discard</string>

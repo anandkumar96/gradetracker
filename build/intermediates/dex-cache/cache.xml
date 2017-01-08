@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="2376ee325e797d1d39da4c098ccb3219acf553c3">
+        sha1="f1e0df590e236fb810bc438fd0a83d492bde1111">
         <dex dex="C:\Users\siran_000\AndroidStudioProjects\GradeTracker\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_edec0071349706aad332fea5a5e78e5a8db6344b\classes.dex" />
     </item>
     <item
@@ -124,7 +124,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d84a028ae93867e141026ae0107d22ab863bae29">
+        sha1="bb89f59e569952902132f2b641f46b1b11e20772">
         <dex dex="C:\Users\siran_000\AndroidStudioProjects\GradeTracker\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2555d7bd8597c6673d329e6538ff8b332727e5ab\classes.dex" />
     </item>
     <item

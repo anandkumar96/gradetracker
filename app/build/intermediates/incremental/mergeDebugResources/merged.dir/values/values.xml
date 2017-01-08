@@ -634,6 +634,7 @@
     <string name="editor_delete_course_failed">No courses were deleted</string>
     <string name="editor_delete_course_successful">Course(s) deleted</string>
     <string name="empty_assignmentview_subtitle_text">Get started by adding an assignment</string>
+    <string name="empty_course">Course cannot be empty</string>
     <string name="empty_courseview_subtitle_text">Get started by adding a course</string>
     <string name="empty_view_title_text">It\'s a bit lonely here...</string>
     <string name="invalid_total_weight">Weights must add up to 100%</string>

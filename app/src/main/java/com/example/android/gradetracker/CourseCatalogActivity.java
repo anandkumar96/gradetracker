@@ -215,6 +215,7 @@ public class CourseCatalogActivity extends AppCompatActivity
         else
             Toast.makeText(this, getString(R.string.editor_delete_course_successful),
                     Toast.LENGTH_SHORT).show();
+        refreshCourseCatalogList();
     }
 
     //showDeleteConfirmatoinDialog

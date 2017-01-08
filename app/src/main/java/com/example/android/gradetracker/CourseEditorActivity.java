@@ -89,12 +89,7 @@ public class CourseEditorActivity extends AppCompatActivity
     // Handling the end of the activity: gather course info to pass to CourseCatalogActivity
     private void finishThisActivity()
     {
-        ArrayList<String> currentCourseAndCategories = new ArrayList<String>();
-        currentCourseAndCategories.add(courseTitle);
-        currentCourseAndCategories.addAll(courseDetails);
-
         Intent intent = new Intent(CourseEditorActivity.this, CourseCatalogActivity.class);
-        intent.putStringArrayListExtra("currentCourseAndCategories", currentCourseAndCategories);
         startActivity(intent);
     }
 
@@ -128,6 +123,8 @@ public class CourseEditorActivity extends AppCompatActivity
                 cat3Weight.isEmpty() && cat4Name.isEmpty() && cat4Weight.isEmpty())
         {
             Log.d("CourseEditorActv", "saveCourse() return b/c user made no changes");
+            Toast.makeText(this, getString(R.string.empty_course),
+                    Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -194,6 +191,7 @@ public class CourseEditorActivity extends AppCompatActivity
         }
         courseTitle = name;
         courseDetails = categories;
+        finishThisActivity();
         if (rowsChanged > 0)
             Toast.makeText(getApplicationContext(),
                     R.string.toast_courseUpdateSuccess, Toast.LENGTH_SHORT).show();
@@ -219,7 +217,6 @@ public class CourseEditorActivity extends AppCompatActivity
             // Respond to a click on the "Save" menu option
             case R.id.action_savecourse:
                 saveCourse();
-                finishThisActivity();
                 return true;
 
 

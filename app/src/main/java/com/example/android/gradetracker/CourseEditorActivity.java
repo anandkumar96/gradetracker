@@ -25,6 +25,13 @@ import java.util.ArrayList;
  * This class contains the details for the Course Editor
  */
 
+/********************************************************************************************************
+    TODO: FOR VERSION 2 OF APP
+    replace hard-coded 4 categories with a running list using ArrayAdapter and ListView
+    (just like List of Courses on CourseCatalog)
+*********************************************************************************************************/
+
+
 public class CourseEditorActivity extends AppCompatActivity
 {
     // Editor Fields
